@@ -35,7 +35,6 @@ pipeline {
             steps {
                 echo 'Reporting....'
                 pwd()
-                sh "tree ."
                 sh "ls -R"
             }
         }
