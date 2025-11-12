@@ -34,7 +34,7 @@ pipeline {
         stage('Report') {
             steps {
                 echo 'Reporting....'
-                pwd()
+                sh "pwd"
                 sh "ls -R"
             }
         }
