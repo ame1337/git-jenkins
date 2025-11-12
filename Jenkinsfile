@@ -19,7 +19,8 @@ pipeline {
           // create a cron trigger that will run the job every day at midnight
           // note that the time is based on the time zone used by the server
           // where Jenkins is running, not the user's time zone
-          // cron '@midnight'
+          TZ=UTC
+          cron '@midnight'
     }
 
     // the pipeline section we all know and love: stages! :D
